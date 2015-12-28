@@ -1,0 +1,25 @@
+{
+  "name": "music1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "babel": "babel --presets es2015,stage-0 -d . src",
+    "browserify": "browserify index.js -o bundle.js",
+    "build": "npm run babel && npm run browserify",
+    "start": "http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.3.26",
+    "mml-emitter": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-template-literals": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "browserify": "^12.0.1",
+    "http-server": "^0.8.5"
+  }
+}
